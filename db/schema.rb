@@ -28,6 +28,7 @@ ActiveRecord::Schema.define(version: 2019_01_10_094127) do
   end
 
   create_table "user_posts", force: :cascade do |t|
+    t.bigInt "user_id"
     t.string "title", null: false
   end
 
