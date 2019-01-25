@@ -1,14 +1,15 @@
 #!/usr/bin/env ruby
 
-require 'bundler'
+require 'bundler/setup'
 require 'active_support/inflector'
 
 def convert(type)
   type
     .sub('string', 'String')
     .sub('int', 'Int')
-    .sub('bigint', 'Int')
+    .sub('bigInt', 'Int')
     .sub('boolean', 'Boolean')
+    .sub('datetime', 'string')
 end
 
 class T
