@@ -39,4 +39,4 @@ module ActiveRecord
   end
 end
 
-require './schema.rb'
+require './db/schema.rb'
