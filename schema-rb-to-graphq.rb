@@ -1,15 +1,17 @@
 #!/usr/bin/env ruby
 
-require 'bundler/setup'
-require 'active_support/inflector'
+# frozen_string_literal: true
+
+require "bundler/setup"
+require "active_support/inflector"
 
 def convert(type)
   type
-    .sub('string', 'String')
-    .sub('int', 'Int')
-    .sub('bigInt', 'Int')
-    .sub('boolean', 'Boolean')
-    .sub('datetime', 'string')
+    .sub("string", "String")
+    .sub("int", "Int")
+    .sub("bigInt", "Int")
+    .sub("boolean", "Boolean")
+    .sub("datetime", "string")
 end
 
 class T
@@ -40,4 +42,4 @@ module ActiveRecord
   end
 end
 
-require './db/schema.rb'
+require "./db/schema.rb"

@@ -1,0 +1,9 @@
+AllCops:
+  Include:
+    - 'app/**/*.rb'
+    - 'spec/**/*.rb'
+  Exclude:
+    - 'db/**/*'
+    - 'vendor/**/*'
+    - 'bin/**/*'
+    - 'Gemfile'
